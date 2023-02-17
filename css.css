@@ -1,0 +1,52 @@
+  .container {
+    display: flex;
+    justify-content: left;
+    align-items: flex;
+    height: 10vh;
+    width: 900px!important;
+  }
+  
+  .image1 {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  .screenshot {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .container2 {
+    margin: 100vw/2;
+  }
+  
+  .grid {
+    display: flex;
+    grid-template-columns: 1fr 350px 1fr;
+    place-items: top;
+    column-gap: 20px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    column-gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .screenshot1 {
+
+  }
+
+  .screenshot2 {
+    
+  }
+
+  .screenshot3 {
+    
+  }
+
+  .screenshot4 {
+    
+  }
