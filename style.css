@@ -1,5 +1,5 @@
 body{
-  background-color:rgb(12, 35, 45);
+  background-color:rgb(23, 25, 26);
 }
 
 header{
@@ -15,11 +15,15 @@ header{
   object-fit: cover;
 }
 
+.logotext {
+  justify-content: right;
+}
+
 .screenshot {
   width: 350px;
   height: auto;
   object-fit: cover;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .screenshot:hover{
@@ -64,4 +68,10 @@ footer {
 #img_label{
   color: rgba(223, 247, 231, 0.884);
   font-size: larger;
+}
+
+h3 {
+  color: white;
+  font-size: 50px;
+  font-family: "Space Mono", monospace;
 }

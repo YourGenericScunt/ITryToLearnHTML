@@ -15,7 +15,7 @@
   <header>
     <img class="logo" src="images/image1.png" alt="warcrimes" width="80" height="80" />
     <div id="logo_text">
-      <h1>Generic Scout</h1>
+      <h3 data-value="GenericScout">GenericScout</h3>
     </div>
   </header>
   <div class="container">
@@ -46,7 +46,7 @@
           <img class="instagram" src="images/instagram.png" alt="instagram" width="48" height="48" alt="sus" />
         </a>
 
-        <a href="https://discord.gg/fC85nRJQ9P">
+        <a href="https://discord.gg/p5PWw54Uw6">
           <img class="discord" src="images/discord.png" alt="discord" width="48" height="48" alt="sus" />
         </a>
         <a href="https://www.youtube.com/channel/UCU5mUwYwduAMr1qpz5HqQwA">
@@ -59,4 +59,32 @@
     </footer>
 </body>
 
+  <script>
+
+  // https://www.youtube.com/watch?v=W5oawMJaXbU
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+document.querySelector("h3").onmouseover = (event) => {
+  let iterations = 0;
+
+  const interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter, index) => {
+        if (index < iterations) {
+          return event.target.dataset.value[index];
+        }
+
+        return letters[Math.floor(Math.random() * 26)];
+      })
+      .join("");
+
+    if (iterations >= event.target.dataset.value.length)
+      clearInterval(interval);
+
+    iterations += 1 / 2;
+  }, 50);
+};
+
+  </script>
 </html>
