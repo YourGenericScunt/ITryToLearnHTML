@@ -1,11 +1,29 @@
-body{
+body {
   background-color:rgb(23, 25, 26);
 }
 
-header{
+header {
   display: flex;
   height: 140px;
   width: 900px!important;
+}
+
+.navigation {
+  justify-content: right;
+  object-fit: cover;
+  margin: 1vh;
+  right: 100%;
+}
+
+.navigationicon {
+  justify-content: right;
+  transition: 0.4;
+}
+
+.navigationicon:hover {
+  opacity: 0.9;
+  width: 33px;
+  height: 33px;
 }
   
 .logo {
@@ -54,18 +72,18 @@ footer {
   transform: translateX(-50%);
 }
 
-#media{
+#media {
   bottom: 0;
   left: 50%;
   margin: auto;
 }
 
-#logo_text{
+#logo_text {
   color: antiquewhite;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#img_label{
+#img_label {
   color: rgba(223, 247, 231, 0.884);
   font-size: larger;
 }
