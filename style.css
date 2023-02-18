@@ -2,28 +2,38 @@ body {
   background-color:rgb(23, 25, 26);
 }
 
-header {
+.header {
   display: flex;
   height: 140px;
-  width: 900px!important;
+  width: 100vw;
+  margin: 0%;
+}
+
+.PFP {
+  flex-grow: 1;
 }
 
 .navigation {
   justify-content: right;
   object-fit: cover;
   margin: 1vh;
-  right: 100%;
+  float: right;
+  top: 10px
 }
 
 .navigationicon {
   justify-content: right;
   transition: 0.4;
+  float: right;
+  top: 10px;
+  object-fit: cover;
+  right: 10px;
 }
 
 .navigationicon:hover {
   opacity: 0.9;
-  width: 33px;
-  height: 33px;
+  width: 37px;
+  height: 37px;
 }
   
 .logo {
@@ -79,17 +89,13 @@ footer {
 }
 
 #logo_text {
-  color: antiquewhite;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-size: 80px;
+  display: inline
 }
 
 #img_label {
   color: rgba(223, 247, 231, 0.884);
   font-size: larger;
-}
-
-h3 {
-  color: white;
-  font-size: 50px;
-  font-family: "Space Mono", monospace;
 }
