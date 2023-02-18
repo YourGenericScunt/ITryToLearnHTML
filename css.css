@@ -52,8 +52,12 @@
   }
 
   .media {
-    position: absolute;
+    display: flex;
+    position: fixed;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    height: 68;
+    width: 100%;
+    background-color: rgb(18, 33, 66)
   }
